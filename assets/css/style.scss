@@ -81,15 +81,15 @@ body{
     .calculadora{
         margin-top: 17vh;
         background-color: rgb(33, 0, 34);
-        width: 25.6vw;
-        height: 70vh;
+        width: 380px;
+        height: 500px;
         border-radius: 14px;
         box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.4); 
         .conteudo{
             display: grid;
             grid-gap: 5px;
-            grid-template-columns: 5.7vw 5.7vw 5.7vw 5.7vw;
-            grid-template-rows: 9vh 12vh 4vh 7.111vh 7.111vh 7.111vh 7.111vh 7.5vh;
+            grid-template-columns: 86px 86px 86px 86px;
+            grid-template-rows: 60px 90px 20px 50px 50px 50px 50px 50 n px;
             margin: 10px 10px 0 8px;
             .phantom{
                 grid-row: 1 / 2;
@@ -119,7 +119,7 @@ body{
                 border-radius: 4px;
                 display: flex;
                 justify-content: center;
-                line-height: auto;
+                line-height: 50px;
                 box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2);
                 input{
                     background-color: rgba(255, 255, 255, 0);
