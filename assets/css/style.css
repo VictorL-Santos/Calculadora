@@ -1,0 +1,190 @@
+@import url("https://fonts.cdnfonts.com/css/kitchen-police");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap");
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#28043a, #4d1560);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28043a;
+  border-radius: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: sans-serif;
+  background: linear-gradient(#28043a, #762491);
+}
+
+.cabecalho {
+  position: fixed;
+  width: 100vw;
+  height: 12vh;
+  background-color: rgba(69, 69, 69, 0.114);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.cabecalho .logo {
+  margin: 0 100px;
+  line-height: 80px;
+  font-size: 35px;
+  font-family: "Kitchen police", sans-serif;
+}
+.cabecalho .logo label {
+  cursor: pointer;
+}
+.cabecalho .navbar ul {
+  margin: 0 100px;
+}
+.cabecalho .navbar ul li {
+  display: inline-block;
+  padding: 13px 30px 0 30px;
+}
+.cabecalho .navbar ul li a {
+  color: black;
+}
+.cabecalho .navbar ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+.cabecalho .navbar ul li a:hover::after {
+  width: 100%;
+  transition: width 0.2s linear;
+}
+
+#home {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+}
+#home .calculadora {
+  margin-top: 17vh;
+  background-color: rgb(33, 0, 34);
+  width: 380px;
+  height: 500px;
+  border-radius: 14px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+#home .calculadora .conteudo {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 86px 86px 86px 86px;
+  grid-template-rows: 60px 90px 20px 50px 50px 50px 50px 50px;
+  margin: 10px 10px 0 8px;
+}
+#home .calculadora .conteudo .phantom {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  background-color: rgb(33, 0, 34);
+  box-shadow: none;
+}
+#home .calculadora .conteudo .visor {
+  grid-row: 2/3;
+  grid-column: 1/5;
+}
+#home .calculadora .conteudo .visor input {
+  line-height: 90px;
+  font-size: 35px;
+  text-align: right;
+  font-family: "Noto Sans Math", sans-serif;
+}
+#home .calculadora .conteudo .phantom2 {
+  grid-row: 3/4;
+  grid-column: 1/5;
+  background-color: rgb(33, 0, 34);
+  box-shadow: none;
+}
+#home .calculadora .conteudo div {
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.164);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2);
+}
+#home .calculadora .conteudo div input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+#sobre {
+  width: 100vw;
+  height: 88vh;
+}
+#sobre .projeto {
+  margin: 16vh;
+}
+#sobre .projeto h1 {
+  text-align: center;
+}
+#sobre .projeto .apresentacao {
+  margin: 0 20px;
+  padding: 0px 50px;
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#sobre .projeto .apresentacao p {
+  max-width: 40%;
+  text-align: justify;
+}
+#sobre .projeto .apresentacao p span {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  color: rgb(140, 40, 255);
+  cursor: pointer;
+}
+#sobre .projeto .apresentacao .image {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+#sobre .projeto .apresentacao .image .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow-y: hidden;
+}
+#sobre .projeto .apresentacao .image .img .img1, #sobre .projeto .apresentacao .image .img .img2 {
+  padding: 5px;
+  width: 145px;
+  height: 145px;
+}
+#sobre .projeto .apresentacao .image .img .img3, #sobre .projeto .apresentacao .image .img .img4 {
+  padding: 5px;
+  width: 140px;
+  height: 140px;
+}/*# sourceMappingURL=style.css.map */
